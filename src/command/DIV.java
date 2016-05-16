@@ -2,12 +2,11 @@ package command;
 
 import java.util.Stack;
 
-public class SQRT implements Cmd {
-
+public class DIV implements Cmd {
     @Override
     public Stack<Double> exec(Stack<Double> stack) {
-        Double v = Math.sqrt(stack.peek());
-        System.out.println("sqrt -> " + v);
+        Double v = stack.pop() / stack.pop();
+        System.out.println("divide-> " + v);
         stack.push(v);
         return stack;
     }
