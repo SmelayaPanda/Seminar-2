@@ -1,12 +1,12 @@
 package start;
 
 public class InfoMessage {
-    public static void getInfo(){
+    public static void getInfo() {
         System.err.println("Available commands:" +
                 "\n_________________________________________________________________________" +
                 "\n PUSH v      ->  put 'v' on top of the stack (v - real number) " +
                 "\n DEFINE a v  ->  define variable with name 'a'" +
-                "\n VARPUSH a   ->  put on top of the stack defined variable 'a'" +
+                "\n VARPUSH a   ->  put on top of the stack defined earlier variable 'a'" +
                 "\n POP         ->  removes the top element of the stack" +
                 "\n PEEK        ->  it shows the top element of the stack" +
                 "\n_________________________________________________________________________" +
