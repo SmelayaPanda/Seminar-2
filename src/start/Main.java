@@ -56,7 +56,7 @@ public class Main {
             } else if ((inst instanceof PUSH) && (strings.length >= 2)) {
                 try {
                     PUSH.exec(stack, Double.parseDouble(strings[1]));
-                } catch (NumberFormatException e) {
+                } catch (NoClassDefFoundError |NumberFormatException e) {
                     System.out.println("Wrong data format" +
                             "\n PUSH v  ->  put 'v' on top of the stack (v - real number) \"");
                 }
