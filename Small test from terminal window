@@ -1,0 +1,45 @@
+any text
+UNKNOWN COMMAND!
+Available commands:
+_________________________________________________________________________
+ PUSH v      ->  put 'v' on top of the stack (v - real number) 
+ DEFINE a v  ->  define variable with name 'a'
+ VARPUSH a   ->  put on top of the stack defined variable 'a'
+ POP         ->  removes the top element of the stack
+ PEEK        ->  it shows the top element of the stack
+_________________________________________________________________________
+ MATHEMATICAL OPERATION:
+ SUM         ->  returns the sum of two top elements of the stack
+ DIF         ->  returns the difference of two top elements of the stack
+ DIV         ->  returns the division of two top elements of the stack
+ MUL         ->  returns the multiply of two top elements of the stack
+ SQRT        ->  returns the square root of the top element of the stack
+_________________________________________________________________________
+PUSH 2
+push -> 2.0
+PUSH x
+Wrong data format
+ PUSH v  ->  put 'v' on top of the stack (v - real number) "
+SUM
+Stack haven't two values
+PUSH 5
+push -> 5.0
+SUM
+summ -> 7.0
+POP
+7.0 kicked
+PEEK
+THE STACK IS EMPTY
+MUL
+Stack haven't two values
+PUSH 5 and other words
+push -> 5.0
+DEFINE y 8
+defined var -> 8.0
+VARPUSH y
+variable with name 'y' pushed in stack
+PEEK
+peek -> 8.0
+MUL
+multiply -> 40.0
+...
