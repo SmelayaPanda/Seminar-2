@@ -6,4 +6,4 @@ ver 2.2
 - Processed by various exceptions
 - Added DEFINE and VARPUSH methods
 - Added INFO message
-- short test submitte in attached txt file
+- Short test submitte in attached txt file
