@@ -9,7 +9,7 @@ public class VARPUSH {
             stack.push(map.get(varName));
             System.out.println("variable with name '" + varName + "' pushed in stack");
         } else {
-            System.out.println("Variable does not exist");
+            System.err.println("Variable does not exist".toUpperCase());
         }
         return stack;
     }

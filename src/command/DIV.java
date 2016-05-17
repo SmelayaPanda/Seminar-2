@@ -10,7 +10,7 @@ public class DIV implements Cmd {
             System.out.println("divide-> " + v);
             stack.push(v);
         } else {
-            System.out.println("Stack haven't two values");
+            System.err.println("Stack haven't two values".toUpperCase());
         }
         return stack;
     }

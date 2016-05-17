@@ -9,7 +9,7 @@ public class SUM implements Cmd {
             Double v = stack.push(stack.pop() + stack.pop());
             System.out.println("summ -> " + v);
         } else {
-            System.out.println("Stack haven't two values");
+            System.err.println("Stack haven't two values".toUpperCase());
         }
         return stack;
     }
