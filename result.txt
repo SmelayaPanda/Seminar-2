@@ -1,0 +1,36 @@
+UNKNOWN COMMAND!
+Available commands:
+_________________________________________________________________________
+ PUSH v      ->  put 'v' on top of the stack (v - real number)
+ DEFINE a v  ->  define variable with name 'a'
+ VARPUSH a   ->  put on top of the stack defined earlier variable 'a'
+ POP         ->  removes the top element of the stack
+ PEEK        ->  it shows the top element of the stack
+ EXIT        ->  terminate JVM
+_________________________________________________________________________
+ MATHEMATICAL OPERATION:
+ SUM         ->  returns the sum of two top elements of the stack
+ DIF         ->  returns the difference of two top elements of the stack
+ DIV         ->  returns the division of two top elements of the stack
+ MUL         ->  returns the multiply of two top elements of the stack
+ SQRT        ->  returns the square root of the top element of the stack
+_________________________________________________________________________
+THE STACK IS EMPTY
+pushed -> 1.0
+pushed -> 4.0
+difference -> 3.0
+STACK HAVEN'T TWO VALUES
+peek -> 3.0
+pushed -> 2.0
+2.0 kicked
+pushed -> 5.0
+summ -> 8.0
+defined var ->  a = 7.0
+variable with name ' a ' pushed in stack
+sqrt -> 2.6457513110645907
+Wrong data format
+ use |DEFINE a v|  ->  define real variable 'v' with name 'a'
+Wrong data format
+ use |PUSH v|  ->  put 'v' on top of the stack (v - real number) "
+VARIABLE DOES NOT EXIST
+EXIT
