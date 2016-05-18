@@ -1,0 +1,37 @@
+Hello=)
+POP
+PUSH 1.0
+PUSH 4.0
+DIF
+MUL
+PEEK
+PUSH 2
+POP
+PUSH 5
+SUM
+DEFINE a 7
+VARPUSH a
+SQRT
+DEFINE b b
+PUsH x
+puSh
+define
+vArPush why not?
+EXIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
