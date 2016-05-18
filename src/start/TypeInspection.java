@@ -29,27 +29,27 @@ public class TypeInspection {
             ((Cmd) inst).exec(stack);
 
             //Three special commands
-        } else if ((inst instanceof DEFINE) && (strings.length >= 3)) {
+        } else if ((inst instanceof DEFINE) && (strings[1]!=null)&&(strings[2]!=null)) {
             try {
                 DEFINE.exec(doubleMap, strings[1], Double.parseDouble(strings[2]));
             } catch (NumberFormatException e) {
                 System.out.println("Wrong data format" +
-                        "\n DEFINE a v  ->  define real variable 'v' with name 'a'");
+                        "\n use |DEFINE a v|  ->  define real variable 'v' with name 'a'");
             }
-        } else if ((inst instanceof PUSH) && (strings.length >= 2)) {
+        } else if ((inst instanceof PUSH) && (strings[1]!=null)) {
             try {
                 PUSH.exec(stack, Double.parseDouble(strings[1]));
             } catch (NoClassDefFoundError | NumberFormatException e) {
                 System.out.println("Wrong data format" +
-                        "\n PUSH v  ->  put 'v' on top of the stack (v - real number) \"");
+                        "\n use |PUSH v|  ->  put 'v' on top of the stack (v - real number) \"");
             }
-        } else if ((inst instanceof VARPUSH) && (strings.length >= 2)) {
+        } else if ((inst instanceof VARPUSH) && (strings[1]!=null)) {
             try {
 
                 VARPUSH.exec(stack, doubleMap, strings[1]);
             } catch (NumberFormatException e) {
                 System.out.println("Wrong data format" +
-                        "\n VARPUSH a   ->  put on top of the stack DEFINE variable 'a'");
+                        "\n use |VARPUSH a|   ->  put on top of the stack DEFINE variable 'a'");
 
             }
         }

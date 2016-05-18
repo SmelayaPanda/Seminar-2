@@ -10,7 +10,7 @@ public class SQRT implements Cmd {
             Double v = Math.sqrt(stack.peek());
             System.out.println("sqrt -> " + v);
             stack.push(v);
-        } else System.err.println("the stack is empty".toUpperCase());
+        } else System.out.println("the stack is empty".toUpperCase());
             return stack;
     }
 }

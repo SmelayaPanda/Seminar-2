@@ -28,7 +28,7 @@ public class Main {
         while (scan.hasNextLine()) {
             String s = scan.nextLine();
             String[] strings = s.split(" ");
-            String clsName = "command." + strings[0];
+            String clsName = "command." + strings[0].toUpperCase();
 
             TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
         }

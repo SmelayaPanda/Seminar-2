@@ -31,22 +31,22 @@ public class Main_2 {
             try {
                 int s;
                 int i = 0;
-                while ((s = in.read()) != -1) {
+                while (((s = in.read()) != -1) ) {
 
-                    if ((char) s == ' ') {
+                    if ((char) s == ' ' || ((char) s == '\r')) {
                         String slovo = String.valueOf(sb);
                         strings[i] = String.valueOf(slovo);
                         sb.delete(0, sb.length());
                         i++;
                     }
                     if ((char) s == '\n') {
-                        String clsName = "command." + strings[0];
+                        String clsName = "command." + strings[0].toUpperCase();
                         TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
-                        strings[0]=null;
-                        strings[1]=null;
-                        strings[2]=null;
+                        strings[0] = null;
+                        strings[1] = null;
+                        strings[2] = null;
                         sb.delete(0, sb.length());
-                        i=0;
+                        i = 0;
 
                     } else {
                         sb.append((char) s);

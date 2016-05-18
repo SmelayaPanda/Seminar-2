@@ -7,9 +7,9 @@ public class VARPUSH {
     public static Stack exec(Stack stack, Map map, String varName) {
         if (map.containsKey(varName)) {
             stack.push(map.get(varName));
-            System.out.println("variable with name '" + varName + "' pushed in stack");
+            System.out.println("variable with name '" + varName + " ' pushed in stack");
         } else {
-            System.err.println("Variable does not exist".toUpperCase());
+            System.out.println("Variable does not exist".toUpperCase());
         }
         return stack;
     }

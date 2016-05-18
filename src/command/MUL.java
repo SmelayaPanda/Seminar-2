@@ -10,7 +10,7 @@ public class MUL implements Cmd {
             System.out.println("multiply -> " + v);
             stack.push(v);
         } else {
-            System.err.println("Stack haven't two values".toUpperCase());
+            System.out.println("Stack haven't two values".toUpperCase());
         }
         return stack;
     }

@@ -7,7 +7,9 @@ public class POP implements Cmd {
     public Stack exec(Stack stack) {
         if (stack.size() >= 1) {
             System.out.println(stack.pop() + " kicked");
-        } else System.err.println("the stack is empty".toUpperCase());
+        } else {
+            System.out.println("the stack is empty".toUpperCase());
+        }
         return stack;
     }
 }
