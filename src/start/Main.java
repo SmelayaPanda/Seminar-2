@@ -11,7 +11,7 @@ import java.util.*;
  * @version 2.2
  * @apiNote Java OOP Stack Calculator
  */
-public class Main_1 {
+public class Main {
     public static Stack<Double> stack = new Stack<>();
     public static Map<String, Double> doubleMap = new HashMap<>();
 
