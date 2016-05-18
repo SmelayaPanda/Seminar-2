@@ -1,4 +1,4 @@
-package start;
+package matadata;
 
 public class InfoMessage {
     public static void getInfo() {
@@ -9,6 +9,7 @@ public class InfoMessage {
                 "\n VARPUSH a   ->  put on top of the stack defined earlier variable 'a'" +
                 "\n POP         ->  removes the top element of the stack" +
                 "\n PEEK        ->  it shows the top element of the stack" +
+                "\n EXIT        ->  terminate JVM" +
                 "\n_________________________________________________________________________" +
                 "\n MATHEMATICAL OPERATION:" +
                 "\n SUM         ->  returns the sum of two top elements of the stack" +
