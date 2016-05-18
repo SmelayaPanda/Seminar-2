@@ -7,3 +7,4 @@ ver 2.2
 - Added DEFINE and VARPUSH methods
 - Added INFO message
 - Short test submitte in attached txt file
+- JUnit test of quadratic equations added
