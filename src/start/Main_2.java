@@ -25,22 +25,28 @@ public class Main_2 {
         BufferedReader in = new BufferedReader(new FileReader("test.txt"));
         StringBuilder sb = new StringBuilder();
         String[] strings = new String[3];
-        String clsName = "command." + strings[0];
+
 
         try {
             try {
                 int s;
+                int i = 0;
                 while ((s = in.read()) != -1) {
 
                     if ((char) s == ' ') {
-                        int i = 0;
                         String slovo = String.valueOf(sb);
-                        strings[i] = slovo;
-                        i++;
+                        strings[i] = String.valueOf(slovo);
                         sb.delete(0, sb.length());
+                        i++;
                     }
                     if ((char) s == '\n') {
+                        String clsName = "command." + strings[0];
                         TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
+                        strings[0]=null;
+                        strings[1]=null;
+                        strings[2]=null;
+                        sb.delete(0, sb.length());
+                        i=0;
 
                     } else {
                         sb.append((char) s);
