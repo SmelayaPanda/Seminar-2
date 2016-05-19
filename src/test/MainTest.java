@@ -24,6 +24,9 @@ public class MainTest {
         POP pop = new POP();
 
         // x^2 - 6 x + 8 = 0
+        /*DEFINE.exec(Main.doubleMap,"a",1.0);
+        DEFINE.exec(Main.doubleMap,"b",6.0);
+        DEFINE.exec(Main.doubleMap,"a",8.0);*/
         double a = 1;
         double b = -6;
         double c = 8;
