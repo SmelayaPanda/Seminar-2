@@ -27,9 +27,9 @@ public class Main {
             String[] strings = s.split(" ");
             String clsName = "command." + strings[0].toUpperCase();
 
-            TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
+          TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
 
-            // TypeInspectionPropFile.typeInspection(strings, stack);
+           // TypeInspectionPropFile.typeInspection(strings, stack);
 
         }
     }

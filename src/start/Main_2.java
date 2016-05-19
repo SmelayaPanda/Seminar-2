@@ -18,10 +18,7 @@ public class Main_2 {
     public static Map<String, Double> doubleMap = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test.txt");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
+
         BufferedReader in = new BufferedReader(new FileReader("src/resources/test.txt"));
         StringBuilder sb = new StringBuilder();
         String[] strings = new String[3];
