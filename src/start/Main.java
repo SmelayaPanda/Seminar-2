@@ -1,6 +1,7 @@
 package start;
 
-import org.junit.Test;
+import inspection.TypeInspection;
+import inspection.TypeInspectionPropFile;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
@@ -25,6 +26,7 @@ public class Main {
             String s = scan.nextLine();
             String[] strings = s.split(" ");
             String clsName = "command." + strings[0].toUpperCase();
+           // TypeInspectionPropFile.typeInspection(strings, stack);
 
             TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
         }

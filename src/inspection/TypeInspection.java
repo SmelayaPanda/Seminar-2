@@ -1,11 +1,10 @@
-package start;
+package inspection;
 
 import command.Cmd;
 import command.DEFINE;
 import command.PUSH;
 import command.VARPUSH;
-import matadata.InfoMessage;
-import org.junit.Test;
+import metadata.InfoMessage;
 
 import java.util.Map;
 import java.util.Stack;

@@ -1,5 +1,7 @@
 package start;
 
+import inspection.TypeInspection;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -20,7 +22,7 @@ public class Main_2 {
         if (!file.exists()) {
             file.createNewFile();
         }
-        BufferedReader in = new BufferedReader(new FileReader("test.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("src/resources/test.txt"));
         StringBuilder sb = new StringBuilder();
         String[] strings = new String[3];
         try {

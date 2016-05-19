@@ -1,4 +1,4 @@
-package matadata;
+package metadata;
 
 public class InfoMessage {
     public static void getInfo() {

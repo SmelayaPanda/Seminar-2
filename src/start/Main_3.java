@@ -1,10 +1,11 @@
 package start;
 
+import inspection.TypeInspection;
+
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.Stack;
 
 /**
