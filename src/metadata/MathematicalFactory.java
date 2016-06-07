@@ -28,10 +28,7 @@ public class MathematicalFactory {
         } catch (ExceptionInInitializerError |IOException e) {
             System.err.println("read error".toUpperCase());
         }
-
-
     }
-
     public Cmd getCmdByName(String comName) {
         return nameCmdMap.get(comName);
     }

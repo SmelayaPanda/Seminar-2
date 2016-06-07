@@ -2,14 +2,17 @@ package start;
 
 import inspection.TypeInspection;
 import inspection.TypeInspectionPropFile;
+import metadata.MyParamAnnotation;
 
 import java.io.*;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.text.Annotation;
 import java.util.*;
 
 /**
  * @author Azarov Alexey
- * @version 2.2
+ * @version 3.2
  * @apiNote Java OOP Stack Calculator
  */
 public class Main {
@@ -27,9 +30,9 @@ public class Main {
             String[] strings = s.split(" ");
             String clsName = "command." + strings[0].toUpperCase();
 
-          TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
+            TypeInspection.typeInspection(clsName, strings, stack, doubleMap);
 
-           // TypeInspectionPropFile.typeInspection(strings, stack);
+            // TypeInspectionPropFile.typeInspection(strings, stack);
 
         }
     }

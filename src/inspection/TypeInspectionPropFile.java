@@ -12,7 +12,6 @@ import java.util.Stack;
 
 public class TypeInspectionPropFile {
 
-
     public static void typeInspection(String[] strings, Stack stack) {
         MathematicalFactory mathF = MathematicalFactory.getInsance();
         Cmd cmd = mathF.getCmdByName(strings[0]);
